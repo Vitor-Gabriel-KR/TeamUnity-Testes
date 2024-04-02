@@ -1,19 +1,88 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
-    </div>
+  <div>
+    <H1 type="text" id="titulo">Criar conta</H1>
   </div>
+  <div id="cubo">
+    <input type="text" id="texto" placeholder="Nome" style="border: none; outline: none;">
+    </div>
+    <div id="cubo">
+    <input type="text" id="texto" placeholder="Email" style="border: none; outline: none;">
+    </div>
+    <div id="cubo">
+    <input type="text" id="texto" placeholder="Senha" style="border: none; outline: none;">
+    </div>
+    <button class="custom-button">CADASTRAR</button>
+
 </template>
 
 <style scoped>
-.item {
+#titulo {
+ font-size: 5cap;
+  color: #615874; 
+  text-align: center;
+  position: relative;
+  z-index: 1; 
+  font-family: 'PoetsenOne', sans-serif;
+  font-weight: 800;
+  left:3%;
+  margin-bottom: 25vh;
+}
+#cubo {
+  height: 15%;
+  width: 80%;
+  background-color: #D9D9D9;
+  position: relative;
+  left: 15%;
+  margin-bottom: 15px; 
+  bottom: 30%;
+
+}
+#texto {
+  font-size: medium;
+  width: 80%; 
+  background-color: #D9D9D9;
+  color: #929292;
+  position: relative;
+  top: 30%;
+  left: 8%;
+}
+
+
+.custom-button {
+  background-color: #615874;
+  border: 2px solid #615874; 
+  border-radius: 20px; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+  position: relative;
+  margin: 0 10px;
+  margin: 20px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  left: 37%;
+  bottom: 30%;
+}
+
+.custom-button:hover {
+  background-color: #ffffff; 
+  color: #000000; 
+}
+
+.custom-button:active {
+  transform: scale(0.95);
+}
+</style>
+
+
+
+<!-- 
+/* .item {
+  
   margin-top: 2rem;
   display: flex;
   position: relative;
@@ -83,5 +152,4 @@ h3 {
   .item:last-of-type:after {
     display: none;
   }
-}
-</style>
+} */ -->

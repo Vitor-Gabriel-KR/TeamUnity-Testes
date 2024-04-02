@@ -8,23 +8,33 @@ defineProps<{
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      para manter-se conectado com 
+      a gente efetue o login no nosso sistema
     </h3>
+    <button class="custom-button">ENTRAR</button>
   </div>
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
 
+h1 {
+  font-weight:900;
+  font-size: 3.5rem;
+  position: relative;
+  top: -50px;
+  color: #ffffff;
+  left: 20%;
+}
 h3 {
+  top: -40px;
   font-size: 1.2rem;
+  text-align: center; 
+  width: 55%; 
+  position: relative; 
+  left: 50%; 
+  transform: translateX(-50%);
+  margin-top: 10px; 
+  text-align: center;
 }
 
 .greetings h1,
@@ -37,5 +47,38 @@ h3 {
   .greetings h3 {
     text-align: left;
   }
+}
+
+.custom-button {
+  background-color: transparent;
+  border: 2px solid #ffffff; 
+  border-radius: 20px; 
+  color: #ffffff; 
+  width: 45%;
+  
+  padding: 10px 20px; 
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+  position: relative;
+  top: -20px;
+  margin: 0 10px;
+  margin: 10px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  left: 26%;
+  bottom: 30%;
+  
+}
+
+.custom-button:hover {
+  background-color: #ffffff; 
+  color: #000000; 
+}
+
+.custom-button:active {
+  transform: scale(0.95);
 }
 </style>
