@@ -23,7 +23,8 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    background: linear-gradient(to right, #615874 50%, #ffffff 50%);
+    
+    background: linear-gradient(to right, #293C6C 50%, #ffffff 50%);
     display: grid;
     display: flex;
     place-items: center;
